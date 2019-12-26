@@ -209,7 +209,9 @@ class MirrorGitlab:
         self._logger.info("groups count: %d", self._groups_count)
         self._logger.info("projects count: %d", self._projects_count)
 
-        self._notify.send_message("""total cost: %d secs\ngroups count: %d\nprojects count: %d""" % (
+        # notification
+        self._notify.send_message("""*Finish mirror at %s*\ntotal cost: %d secs\ngroups count: %d\nprojects count: %d""" % (
+            endtime.strftime("%Y/%m/%d %H:%M:%S"),
             delta.total_seconds(),
             self._groups_count,
             self._projects_count,
