@@ -20,6 +20,12 @@ private_token =
 [session_2]
 url = http://private2.gitlab.com
 private_token =
+
+[telegram]
+bot_token = 
+bot_chat_ids = 
+parse_mode = Markdown
+timeout = 5
 ```
 
 To follow up the config.cfg, please revise the session id
