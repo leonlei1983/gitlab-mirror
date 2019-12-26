@@ -217,6 +217,4 @@ class MirrorGitlab:
 
 if __name__ == "__main__":
     mirror = MirrorGitlab("oa", "aws")
-    # mirror.start_sync("smart")
-    mirror.start_sync("test")
-    # mirror.start_sync()
+    mirror.start_sync()
